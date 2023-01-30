@@ -1,18 +1,19 @@
 {
   "headings": [
     {
-      "title": "principle",
+      "title": "Aspect",
       "description": "The DevSecOps Principle you need to be good at to better move the needle for your org"
     },
-    { "title": "level 1", "description": "Poorly controlled, reactive" },
-    { "title": "level 2", "description": "Some minority adoption of basic best practices" },
-    { "title": "level 3", "description": "Proactive not reactive, measured and controlled" },
-    { "title": "level 4", "description": "Continuous improvement, pushing the envelope with advanced implementation of principles" }
+    { "title": "level 1", "description": "Initial" },
+    { "title": "level 2", "description": "Exploratory" },
+    { "title": "level 3", "description": "Fundamental" },
+    { "title": "level 4", "description": "Repeatable" },
+    { "title": "level 5", "description": "Optimisation" }
   ],
   "principles": [
     {
       "principle": {
-        "value": "Observability",
+        "value": "Adoption",
         "description": "How much observability do you have on your systems environments, inputs, outputs and behaviour. Do you have enough information on how your system runs to make improvements/solve problems?",
         "questions": ["How well does your current approach map to the <a href='observability-strategy'>Observability Strategy</a>"]
       },
@@ -60,15 +61,19 @@
           "Do you have extensive system dashboards that are used by technical and non-technical alike on a regular basis"
         ]
       },
+      "level 5": {
+        "value": "stuff",
+        "description": "long description",
+        "questions": []
+      },
       "scores": {
-        "team 1": 0.8,
-        "team 2": 0.25,
-        "team 3": 0.4
+        "current": 0.4,
+        "desired": 0.8
       }
     },
     {
       "principle": {
-        "value": "Development Practices",
+        "value": "Security",
         "description": "Good engineering practices in the SDLC that enable you to move fast and reduce legacy",
         "questions": [
           "Standardise work",
@@ -127,14 +132,13 @@
         ]
       },
       "scores": {
-        "team 1": 0.6,
-        "team 2": 0.25,
-        "team 3": 0.4
+        "current": 0.2,
+        "desired": 1.0
       }
     },
     {
       "principle": {
-        "value": "CI/CD",
+        "value": "Observability",
         "description": "Enable fast and quality flow from development to production reliably",
         "questions": [
           "Standardise work",
@@ -203,14 +207,13 @@
         ]
       },
       "scores": {
-        "team 1": 0.8,
-        "team 2": 0.25,
-        "team 3": 0.4
+        "current": 0.4,
+        "desired": 0.6
       }
     },
     {
       "principle": {
-        "value": "Security",
+        "value": "Cluster Operations",
         "description": "Building security into the SDLC improves delivery performance and security quality",
         "questions": [
           "How far left have you managed to shift security?",
@@ -277,14 +280,13 @@
         ]
       },
       "scores": {
-        "team 1": 0.5,
-        "team 2": 0.25,
-        "team 3": 0.4
+        "current": 0.2,
+        "desired": 0.8
       }
     },
     {
       "principle": {
-        "value": "Availability",
+        "value": "Developer Experience",
         "description": "How do we keep things up and running",
         "questions": [
           "Can you recover quickly from incidents a low MTTR?",
@@ -324,14 +326,13 @@
         ]
       },
       "scores": {
-        "team 1": 0.2,
-        "team 2": 0.2,
-        "team 3": 0.2
+        "current": 0.2,
+        "desired": 0.8
       }
     },
     {
       "principle": {
-        "value": "Durability",
+        "value": "Deployment Process",
         "description": "How good are our backups",
         "questions": [
           "Can you recover quickly from incidents a low MTTR?",
@@ -382,66 +383,8 @@
         ]
       },
       "scores": {
-        "team 1": 0.4,
-        "team 2": 0.2,
-        "team 3": 0.5
-      }
-    },
-    {
-      "principle": {
-        "value": "Culture",
-        "description": "This section highlights cultural styles and values within the company",
-        "questions": ["How good is your culture?"]
-      },
-      "level 1": {
-        "value": "Power-oriented culture",
-        "description": "Very limited scope of responsibility, minimal cooperation, novelty is not welcomed, information is hidden",
-        "questions": [
-          "Do team members feel fear of asking for feedback?",
-          "Is there a punitive culture?",
-          "Is cross-communication discouraged?",
-          "Do employees have little responsibility?",
-          "Is information readily available?"
-        ]
-      },
-      "level 2": {
-        "value": "Rule-oriented culture",
-        "description": "Modest cooperation, rule-following behaviour, narrow responsibility, novelty may lead to problems",
-        "questions": [
-          "Is the organisation fair?",
-          "Does novelty leads to problems?",
-          "Focus on departmental goals",
-          "Failure leads to seek justice",
-          "Is information shared?"
-        ]
-      },
-      "level 3": {
-        "value": "Trust-oriented culture",
-        "description": "Trust-oriented culture",
-        "questions": [
-          "Is there trust across the organisational hierarchy?",
-          "Is cross-functional collaboration encouraged?",
-          "Is communication transparent?",
-          "Are new ideas welcomed?",
-          "Are risks shared?"
-        ]
-      },
-      "level 4": {
-        "value": "Performance-oriented",
-        "description": "Goal oriented",
-        "questions": [
-          "Is there a focus on organisational goal?",
-          "Is work recognised as meaningful?",
-          "Is cross-functional collaboration established?",
-          "Is innovation sought and implemented?",
-          "is there a match between personal and organisational values?",
-          "Is failure seen as an opportunity to improve the system?"
-        ]
-      },
-      "scores": {
-        "team 1": 0.7,
-        "team 2": 0.2,
-        "team 3": 0.3
+        "current": 0.2,
+        "desired": 0.8
       }
     }
   ]
